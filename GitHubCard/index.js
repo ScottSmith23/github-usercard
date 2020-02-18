@@ -91,11 +91,12 @@ function createCard(cardObj){
   const followersP = document.createElement('p');
   const followingP = document.createElement('p');
   const bioP = document.createElement('p');
-
+  const calendar = document.createElement('div');
 
 //add classes
 cardNew.classList.add('card');
 cardInfo.classList.add('card-info');
+calendar.classList.add('calendar');
 // cardInfo.classList.add(`card-hider`);
 cardName.classList.add('name');
 userP.classList.add('username');
@@ -120,6 +121,7 @@ cardInfo.appendChild(profileP);
 cardInfo.appendChild(followersP);
 cardInfo.appendChild(followingP);
 cardInfo.appendChild(bioP);
+// cardInfo.appendChild(calendar);
 cardNew.appendChild(cardIMG);
 cardNew.appendChild(cardInfo);
 
